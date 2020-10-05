@@ -28,9 +28,7 @@ class App extends React.Component {
             currentUser: {
               id: snapShot.id,
               ...snapShot.data()
-            }}, ()=>{
-              console.log('test state', this.state)
-            })
+            }})
           
         })
       }

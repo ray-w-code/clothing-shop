@@ -17,7 +17,7 @@ const config = {
     if(!userAuth) return;
     const userRef = firestore.doc(`/users/${userAuth.uid}`)
     const snapShot = await userRef.get();
-    console.log("snapShot:", snapShot) 
+    // test snapShot console.log("snapShot:", snapShot) 
 
     if(!snapShot.exists){
       const {displayName, email} = userAuth;
